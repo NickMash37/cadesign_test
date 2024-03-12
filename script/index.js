@@ -1,3 +1,2 @@
-import './second.js'
-
-console.log('Works')
+const preferencesBlockElement = document.querySelectorAll('.preferences object')
+const svgImage = document.querySelectorAll('.preferences__img')
