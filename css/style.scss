@@ -2,12 +2,94 @@
     font-family: 'Helios';
     font-style: normal;
     src: local('Helios'),
-         url("font/helios-cond.ttf");
+         url("font/Helios.ttf");
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'),
+         url("font/Gilroy.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helios';
+    font-family: 'Helios', sans-serif;
+    overflow: hidden;
+    cursor: default;
 }
+
+@mixin mainColor {
+    background-color: #E9862A;
+}
+
+@mixin secondColor {
+    color: #187CD3;
+}
+
+// Header styles start
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 46px 250px;
+    justify-content: space-between;
+
+    img {
+        width: 115px;
+        height: 25px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 66px;
+
+        .header__menu {
+            display: flex;
+            justify-content: space-around;
+            gap: 66px;
+    
+            &-el {
+                font-size: 16px;
+                font-weight: 400;
+                list-style-type: none;
+    
+                &:hover {
+                    cursor: pointer;
+    
+                    &:after {
+                        display: block;
+                        content: '';
+                        margin-top: 27px;
+                        width: 100%;
+                        height: 2px;
+                        @include mainColor();
+                    }
+                }
+            }
+        }
+
+        .header__socials {
+            display: flex;
+
+            span {
+                @include secondColor();
+                font-family: 'Gilroy', sans-serif;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            i {
+                font-size: 10px;
+                margin-left: 5px;
+                margin-top: 3px;
+            }
+        }
+    }
+
+}
+
+// Header styles end
