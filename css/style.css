@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Helios";
+  font-style: normal;
+  src: local("Helios"), url("font/helios-cond.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helios";
+}
+
+/*# sourceMappingURL=style.css.map */
