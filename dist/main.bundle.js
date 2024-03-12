@@ -1,1 +1,32 @@
-(()=>{var e={253:()=>{console.log("Works second file")}},r={};function o(t){var n=r[t];if(void 0!==n)return n.exports;var s=r[t]={exports:{}};return e[t](s,s.exports,o),s.exports}o.n=e=>{var r=e&&e.__esModule?()=>e.default:()=>e;return o.d(r,{a:r}),r},o.d=(e,r)=>{for(var t in r)o.o(r,t)&&!o.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:r[t]})},o.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),(()=>{"use strict";o(253),console.log("Works")})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./script/index.js":
+/*!*************************!*\
+  !*** ./script/index.js ***!
+  \*************************/
+/***/ (() => {
+
+eval("const preferencesBlockElement = document.querySelectorAll('.preferences object')\r\nconst svgImage = document.querySelectorAll('svg')\r\n\r\npreferencesBlockElement.forEach((el, idx) => {\r\n    el.addEventListener('mouseenter', () => {\r\n        svgImage[idx].classList.toggle('hovered')\r\n    })\r\n})\n\n//# sourceURL=webpack:///./script/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./script/index.js"]();
+/******/ 	
+/******/ })()
+;

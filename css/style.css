@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 134px;
+  height: 150px;
   padding: 46px 250px;
   justify-content: space-between;
 }
@@ -124,7 +124,7 @@ header nav .header__socials i {
 .promo__img-personal {
   z-index: 2;
   right: 195px;
-  top: 251px;
+  top: 267px;
   width: 600px;
   height: 394px;
 }
@@ -133,12 +133,34 @@ header nav .header__socials i {
   margin: 76px auto 70px;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .preferences object {
+  height: 100%;
   width: 33%;
+  border: 1px solid #EDEDED;
+  height: 376px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 50px;
 }
-.preferences object img:hover {
+.preferences object svg {
+  height: 62px;
+  width: 66px;
+}
+.preferences object:hover svg path:not(#Dinamic) {
   fill: #E77E1E;
+}
+.preferences object:hover #Dinamic {
+  stroke: #E77E1E;
+}
+.preferences h2 {
+  font-size: 20px;
+}
+.preferences p {
+  margin-top: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

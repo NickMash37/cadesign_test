@@ -47,7 +47,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 134px;
+    height: 150px;
     padding: 46px 250px;
     justify-content: space-between;
 
@@ -160,7 +160,7 @@ header {
     &__img-personal {
         z-index: 2;
         right: 195px;
-        top: 251px;
+        top: 267px;
         width: 600px;
         height: 394px;
     }
@@ -174,14 +174,38 @@ header {
     margin: 76px auto 70px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 
     object {
+        height: 100%;
         width: 33%;
+        border: 1px solid #EDEDED;
+        height: 376px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 50px;
 
-        img {
-            &:hover {
-                fill: #E77E1E;
-            }
+        svg {
+            height: 62px;
+            width: 66px;
         }
+
+        &:hover svg path:not(#Dinamic) {
+            fill: #E77E1E;
+        }
+
+        &:hover #Dinamic {
+            stroke: #E77E1E;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        margin-top: 23px;
     }
 }
