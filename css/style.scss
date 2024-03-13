@@ -15,6 +15,10 @@
     margin: auto;
 }
 
+.visible {
+    display: block;
+}
+
 @mixin mainColor {
     background-color: #E9862A;
 }
@@ -184,8 +188,15 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 45px;
         padding: 50px 50px;
+
+        &:hover {
+            box-shadow: 0 0 55px 10px #EDEDED;
+            filter: box-shadow blur(5px);
+            transform: scaleZ(1.1);
+        }
 
         svg {
             height: 62px;
@@ -203,6 +214,8 @@ header {
 
     h2 {
         font-size: 20px;
+        font-family: 'HeliosC', sans-serif;
+        font-weight: 400;
     }
 
     p {

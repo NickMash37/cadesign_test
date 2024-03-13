@@ -7,5 +7,8 @@
   "scripts": {
     "dev": "yarn webpack --mode development",
     "build": "yarn webpack --mode production"
+  },
+  "dependencies": {
+    "swiper": "^11.0.7"
   }
 }
